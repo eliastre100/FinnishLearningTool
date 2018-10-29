@@ -1,0 +1,55 @@
+<form #answerForm="ngForm">
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">Months</div>
+        <div class="row" *ngIf="show">
+          <div class="col s12">
+            <div class="card orange">
+              <div class="card-content">
+                {{ question.answer }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-content">
+                {{ question.origin }}
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="card">
+              <div class="card-content">
+                <div class="input-field">
+                  <input type="text" name="answer" id="answer" [(ngModel)]="answer" />
+                  <label for="answer">Answer</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button class="btn green" (click)="checkAnswer()">Validate</button>
+            <button class="btn orange" *ngIf="!show" (click)="show = true">Show</button>
+            <button class="btn red" *ngIf="show" (click)="selectQuestion()">Skip</button>
+            <button class="btn blue right" (click)="reverse(); selectQuestion()">Change way</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">Other rules</div>
+        <ul>
+          <li>Add <strong>ssa</strong> to say <strong>in the month</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</form>
+
