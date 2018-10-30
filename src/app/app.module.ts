@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonthsComponent } from './months/months.component';
 import {FormsModule} from '@angular/forms';
+import { DaysComponent } from './days/days.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MonthsComponent
+    MonthsComponent,
+    DaysComponent
   ],
   imports: [
     BrowserModule,
