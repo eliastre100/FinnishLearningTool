@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 declare var M: any;
-interface QuestionType { origin: string, answer: string }
+interface QuestionType { origin: string; answer: string; enabled: boolean; }
 
 @Component({
   selector: 'app-days',
@@ -10,16 +10,17 @@ interface QuestionType { origin: string, answer: string }
 })
 export class DaysComponent implements OnInit {
   private questions: QuestionType[] = [
-    { origin: 'Monday', answer: 'Maanantai' },
-    { origin: 'Tuesday', answer: 'Tiistai' },
-    { origin: 'Wednesday', answer: 'Keskiviikko' },
-    { origin: 'Thursday', answer: 'Torstai' },
-    { origin: 'Friday', answer: 'Perjantai' },
-    { origin: 'Saturday', answer: 'Lauantai' },
-    { origin: 'Sunday', answer: 'Sunnuntai' },
-    { origin: 'Weekend', answer: 'Viikonloppu' }
+    { origin: 'Monday', answer: 'Maanantai', enabled: true },
+    { origin: 'Tuesday', answer: 'Tiistai', enabled: true },
+    { origin: 'Wednesday', answer: 'Keskiviikko', enabled: true },
+    { origin: 'Thursday', answer: 'Torstai', enabled: true },
+    { origin: 'Friday', answer: 'Perjantai', enabled: true },
+    { origin: 'Saturday', answer: 'Lauantai', enabled: true },
+    { origin: 'Sunday', answer: 'Sunnuntai', enabled: true },
+    { origin: 'Weekend', answer: 'Viikonloppu', enabled: false }
   ];
   public question = null;
+  public course = false;
   public show = false;
   public answer = '';
 
@@ -31,16 +32,20 @@ export class DaysComponent implements OnInit {
 
   selectQuestion() {
     let q = null;
+    const enabledQuestions = this.questions.filter((element) => element.enabled);
+    if (enabledQuestions.length < 1) {
+      alert('No question enabled. Please enable more question to use the quizz feature');
+      return;
+    }
     do {
-      q = this.questions[Math.floor(Math.random() * 10) % this.questions.length];
-    } while (q === this.question);
+      q = enabledQuestions[Math.floor(Math.random() * 10) % enabledQuestions.length];
+    } while (q === this.question && enabledQuestions.length > 1);
     this.question = q;
     this.show = false;
     this.answer = '';
   }
 
   checkAnswer() {
-    console.log(this.answer, this.question.answer);
     if (this.answer.toLowerCase() === this.question.answer.toLowerCase()) {
       M.toast({html: 'Good answer', classes: 'green'});
       this.selectQuestion();
@@ -50,7 +55,7 @@ export class DaysComponent implements OnInit {
   }
 
   reverse() {
-    const qs = this.questions.map((question) => ({ origin: question.answer, answer: question.origin }));
+    const qs = this.questions.map((question) => ({ origin: question.answer, answer: question.origin, enabled: question.enabled }));
     this.questions = qs;
   }
 }
