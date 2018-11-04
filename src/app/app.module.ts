@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MonthsComponent } from './months/months.component';
 import {FormsModule} from '@angular/forms';
 import { DaysComponent } from './days/days.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonthsComponent,
-    DaysComponent
+    DaysComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
