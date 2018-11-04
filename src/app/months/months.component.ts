@@ -24,6 +24,7 @@ export class MonthsComponent implements OnInit {
     { origin: 'December', answer: 'Joulukuu', enabled: true },
   ];
   public question = null;
+  public course = false;
   public show = false;
   public answer = '';
 
