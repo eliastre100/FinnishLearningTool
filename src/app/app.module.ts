@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { DaysComponent } from './days/days.component';
 import { IndexComponent } from './index/index.component';
 import { DoingComponent } from './doing/doing.component';
+import { HeadComponent } from './head/head.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DoingComponent } from './doing/doing.component';
     MonthsComponent,
     DaysComponent,
     IndexComponent,
-    DoingComponent
+    DoingComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,

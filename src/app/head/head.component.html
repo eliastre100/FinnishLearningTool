@@ -1,0 +1,104 @@
+<form #answerForm="ngForm">
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">Head elements</div>
+        <div class="row" *ngIf="answerneeded > 1">
+          <div class="col s12">
+            <div class="card red">
+              <div class="card-content">
+                {{ answerneeded }} correct answer to go to next question
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngIf="show">
+          <div class="col s12">
+            <div class="card orange">
+              <div class="card-content">
+                <div class="row">
+                  <div class="col s12 m10">
+                    {{ question.answer }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                {{ question.origin }}
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <div class="input-field">
+                  <input type="text" name="answer" id="answer" [(ngModel)]="answer" />
+                  <label for="answer">Answer</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button class="btn green" (click)="checkAnswer()">Validate</button>
+            <button class="btn orange" *ngIf="!show" (click)="show = true">Show</button>
+            <button class="btn orange" (click)="answerneeded = 10" *ngIf="show">Ask 10 times</button>
+            <button class="btn red" *ngIf="show" (click)="selectQuestion()">Skip</button>
+            <button class="btn red right" (click)="course = !course" *ngIf="!course">Show course</button>
+            <button class="btn blue right" (click)="reverse(); selectQuestion()">Change way</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="course">
+      <div class="card-content">
+        <div class="card-title">Course</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Answer</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let question of questions">
+              <td>{{ question.origin }}</td>
+              <td>{{ question.answer }}</td>
+              <td class="switch">
+                <label>
+                  Off
+                  <input type="checkbox" name="{{ question.origin }}" [(ngModel)]="question.enabled">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row"></div>
+        <div class="row">
+          <div class="col s12">
+            <button class="btn green" (click)="course = !course">Hide</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">Other rules</div>
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</form>
