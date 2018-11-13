@@ -9,6 +9,7 @@ import { DaysComponent } from './days/days.component';
 import { IndexComponent } from './index/index.component';
 import { DoingComponent } from './doing/doing.component';
 import { HeadComponent } from './head/head.component';
+import { MaritalStatusComponent } from './marital-status/marital-status.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeadComponent } from './head/head.component';
     DaysComponent,
     IndexComponent,
     DoingComponent,
-    HeadComponent
+    HeadComponent,
+    MaritalStatusComponent
   ],
   imports: [
     BrowserModule,
