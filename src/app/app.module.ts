@@ -4,16 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonthsComponent } from './months/months.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { DaysComponent } from './days/days.component';
 import { IndexComponent } from './index/index.component';
+import { DoingComponent } from './doing/doing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonthsComponent,
     DaysComponent,
-    IndexComponent
+    IndexComponent,
+    DoingComponent
   ],
   imports: [
     BrowserModule,
