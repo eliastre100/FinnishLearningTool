@@ -11,6 +11,7 @@ import { DoingComponent } from './doing/doing.component';
 import { HeadComponent } from './head/head.component';
 import { MaritalStatusComponent } from './marital-status/marital-status.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { PersonsComponent } from './persons/persons.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     DoingComponent,
     HeadComponent,
     MaritalStatusComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    PersonsComponent
   ],
   imports: [
     BrowserModule,

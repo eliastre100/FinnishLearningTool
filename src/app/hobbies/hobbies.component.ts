@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 declare var M: any;
 interface QuestionType { origin: string; answer: string; instruction: string | null; enabled: boolean; }
 
