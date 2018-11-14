@@ -10,6 +10,7 @@ import { IndexComponent } from './index/index.component';
 import { DoingComponent } from './doing/doing.component';
 import { HeadComponent } from './head/head.component';
 import { MaritalStatusComponent } from './marital-status/marital-status.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MaritalStatusComponent } from './marital-status/marital-status.componen
     IndexComponent,
     DoingComponent,
     HeadComponent,
-    MaritalStatusComponent
+    MaritalStatusComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,
