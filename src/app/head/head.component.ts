@@ -53,7 +53,7 @@ export class HeadComponent implements OnInit {
       return;
     }
     do {
-      q = enabledQuestions[Math.floor(Math.random() * 10) % enabledQuestions.length];
+      q = enabledQuestions[Math.floor(Math.random() * 10000) % enabledQuestions.length];
     } while (q === this.question && enabledQuestions.length > 1);
     this.question = q;
     this.answerneeded = 1;
