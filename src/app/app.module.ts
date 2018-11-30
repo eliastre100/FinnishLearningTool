@@ -12,6 +12,7 @@ import { HeadComponent } from './head/head.component';
 import { MaritalStatusComponent } from './marital-status/marital-status.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PersonsComponent } from './persons/persons.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PersonsComponent } from './persons/persons.component';
     HeadComponent,
     MaritalStatusComponent,
     HobbiesComponent,
-    PersonsComponent
+    PersonsComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,
