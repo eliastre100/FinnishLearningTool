@@ -13,6 +13,7 @@ import { MaritalStatusComponent } from './marital-status/marital-status.componen
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PersonsComponent } from './persons/persons.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { QuizzComponent } from './quizz/quizz.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { QuestionsComponent } from './questions/questions.component';
     MaritalStatusComponent,
     HobbiesComponent,
     PersonsComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    QuizzComponent
   ],
   imports: [
     BrowserModule,

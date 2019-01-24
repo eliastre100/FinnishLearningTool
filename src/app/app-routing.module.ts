@@ -9,6 +9,7 @@ import { MaritalStatusComponent } from './marital-status/marital-status.componen
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PersonsComponent } from './persons/persons.component';
 import {QuestionsComponent} from './questions/questions.component';
+import {QuizzComponent} from './quizz/quizz.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'marital-status', component: MaritalStatusComponent },
   { path: 'hobbies', component: HobbiesComponent },
   { path: 'persons', component: PersonsComponent },
-  { path: 'questions', component: QuestionsComponent }
+  { path: 'questions', component: QuestionsComponent },
+  { path: 'quizz/kaupassa', component: QuizzComponent }
 ];
 
 @NgModule({
