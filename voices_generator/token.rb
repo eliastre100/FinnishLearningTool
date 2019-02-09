@@ -21,6 +21,7 @@ class Token
     }
 
     resp = http.post(url.path, '', headers)
+    raise 'Unable to acquire token' unless resp.code == '200'
     @token = resp.body
   end
 end

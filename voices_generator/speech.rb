@@ -49,6 +49,14 @@ class Speech
     end
 
     resp = http.post(url.path, data.to_s, headers)
-    @sound = resp.body
+    if resp.code == '200'
+      @sound = resp.body
+    else
+      @failures = (@failures || 0) + 1
+      raise 'Unable to retrieve voice after 5 tries' if @failures > 5
+      puts "[ERROR] Failed to retrieve sound. Will try again in 30 seconds. (#{@failures}/5)"
+      sleep 30
+      generate(token, lang)
+    end
   end
 end

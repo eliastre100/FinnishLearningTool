@@ -2,16 +2,10 @@ require_relative 'token'
 require_relative 'speech'
 require_relative 'collection'
 
-=begin
-puts "[INFO] Getting access token"
-token = Token.new(ENV['azure_key'])
-
-puts "[INFO] Translating text"
-hyva = Speech.new('Hyvä päivä', token, 'fi-FI')
-
-puts "[INFO] Saving text"
-hyva.save
-=end
+unless ENV.has_key? 'AZURE_KEY'
+  STDERR.puts "[ERROR] You need to define the variable environment AZURE_KEY with your azure api key to generate the new voices"
+  exit 1
+end
 
 collection = Collection.new('questions.json')
-collection.generate('35be31b159f547678e10e86bedefd920')
+collection.generate(ENV['AZURE_KEY'])

@@ -8,5 +8,5 @@ cp src/assets/questions.json voices_generator
 pwd
 cp -R ./voices_generator/dist/* src/assets/voices
 
-ng build --prod --base-href "https://eliastre100.github.io/FinnishLearninTool/"
+ng build --prod --base-href "https://eliastre100.github.io/FinnishLearningTool/"
 ngh

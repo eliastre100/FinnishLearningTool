@@ -42,3 +42,4 @@ Thumbs.db
 voices_generator/*/*
 src/assets/voices/*
 api_key.txt
+voices_generator/questions.json
