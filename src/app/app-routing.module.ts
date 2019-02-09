@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'hobbies', component: HobbiesComponent },
   { path: 'persons', component: PersonsComponent },
   { path: 'questions', component: QuestionsComponent },
-  { path: 'quizz/kaupassa', component: QuizzComponent }
+  { path: 'quizz/:quizz', component: QuizzComponent }
 ];
 
 @NgModule({

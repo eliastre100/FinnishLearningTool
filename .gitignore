@@ -37,3 +37,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Voices generated
+voices_generator/*/*
+src/assets/voices/*
+api_key.txt

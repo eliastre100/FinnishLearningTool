@@ -1,4 +1,4 @@
-<form #answerForm="ngForm">
+<form #answerForm="ngForm" *ngIf="questions">
   <div class="container">
     <div class="card">
       <div class="card-content">
@@ -22,13 +22,14 @@
             </div>
           </div>
         </div>
-        <div class="row" *ngIf="show">
+        <div class="row" *ngIf="show && options.answer.text">
           <div class="col s12">
             <div class="card orange">
               <div class="card-content">
                 <div class="row">
                   <div class="col s12 m10">
-                    {{ question.answer }}
+                    <i (click)="playVoice(question.answer, 'answer')"class="material-icons">play_circle_filled</i>&nbsp;
+                    <span>{{ question.answer }}</span>
                   </div>
                 </div>
               </div>
@@ -39,31 +40,88 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-content">
-                {{ question.origin }}
+                <i *ngIf="options.question.voice || show" (click)="playVoice(question.origin, 'origin')"class="material-icons">play_circle_filled</i>&nbsp;
+                <span *ngIf="options.question.text || !options.question.voice || show">{{ question.origin }}</span>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
             <div class="card">
               <div class="card-content">
-                <div class="input-field">
+                <div class="input-field" *ngIf="options.answer.text">
                   <input type="text" name="answer" id="answer" [(ngModel)]="answer" />
                   <label for="answer">Answer</label>
                 </div>
+                <i *ngIf="!options.answer.text" (click)="playVoice(question.answer, 'answer')"class="material-icons">play_circle_filled</i>&nbsp;
+                <span *ngIf="show && !options.answer.text">{{ question.answer }}</span>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <button class="btn green" (click)="checkAnswer()">Validate</button>
+            <button class="btn green" *ngIf="options.answer.text" (click)="checkAnswer()">Validate</button>
+            <button class="btn green" *ngIf="!options.answer.text" (click)="selectQuestion()">Next</button>
             <button class="btn orange" *ngIf="!show" (click)="show = true">Show</button>
-            <button class="btn orange" (click)="answerneeded = 10" *ngIf="show">Ask 10 times</button>
-            <button class="btn red" *ngIf="show" (click)="selectQuestion()">Skip</button>
+            <button class="btn orange" (click)="answerneeded = 10" *ngIf="show && options.answer.text">Ask 10 times</button>
+            <button class="btn red" *ngIf="show && options.answer.text" (click)="selectQuestion()">Skip</button>
+            <button class="btn" *ngIf="!showOptions" (click)="showOptions = !showOptions">Options</button>
             <button class="btn red right" (click)="course = !course" *ngIf="!course">Show course</button>
             <button class="btn blue right" (click)="reverse(); selectQuestion()">Change way</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="showOptions">
+      <div class="card-content">
+        <div class="card-title">Options</div>
+        <h6>Question options</h6>
+        <table>
+          <tr>
+            <td>Text enabled</td>
+            <td class="right-align">
+              <div class="switch">
+                <label>
+                  Off
+                  <input type="checkbox" name="option-question-text" [(ngModel)]="options.question.text">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Voice enabled</td>
+            <td class="right-align">
+              <div class="switch">
+                <label>
+                  Off
+                  <input type="checkbox" name="option-question-text" [(ngModel)]="options.question.voice">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <h6>Answer options</h6>
+        <table>
+          <tr>
+            <td>Text enabled</td>
+            <td class="right-align">
+              <div class="switch">
+                <label>
+                  Off
+                  <input type="checkbox" name="option-question-text" [(ngModel)]="options.answer.text">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
 
@@ -80,8 +138,8 @@
           </thead>
           <tbody>
           <tr *ngFor="let question of questions">
-            <td>{{ question.origin }}</td>
-            <td>{{ question.answer }}</td>
+            <td (click)="playVoice(question.origin, 'origin')">{{ question.origin }}</td>
+            <td (click)="playVoice(question.answer, 'answer')">{{ question.answer }}</td>
             <td class="switch">
               <label>
                 Off
@@ -112,3 +170,4 @@
     </div>
   </div>
 </form>
+<div *ngIf="!question">Loading...</div>

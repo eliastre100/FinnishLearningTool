@@ -1,6 +1,10 @@
 export default {
-  kaupassa: {
-    name: 'Kaupassa',
+  ruoka: {
+    name: 'Ruoka',
+    langs: {
+      origin: "en-GB",
+      answer: "fi-FI"
+    },
     questions: [
       { answer: 'Omena', origin: 'Apple', instruction: null, enabled: true },
       { answer: 'Appelsiini', origin: 'Orange', instruction: null, enabled: true },
@@ -45,6 +49,43 @@ export default {
       { answer: 'Kukkakaali', origin: 'Cauliflower', instruction: null, enabled: true },
       { answer: 'Peruna', origin: 'Potato', instruction: null, enabled: true },
       { answer: 'Punajuuri', origin: 'Beetroot', instruction: null, enabled: true },
+    ]
+  },
+  ruoka_adjektiivit: {
+    name: 'Ruoka adjektiivit',
+    langs: {
+      origin: "en-GB",
+      answer: "fi-FI"
+    },
+    questions: [
+      { origin: 'Sweet', answer: 'Makea', instruction: null, enabled: true },
+      { origin: 'Sour', answer: 'Hapan', instruction: null, enabled: true },
+      { origin: 'Sweet and sour', answer: 'Hapanimelä', instruction: null, enabled: true },
+      { origin: 'Salty', answer: 'Suolainen', instruction: null, enabled: true },
+      { origin: 'Strong', answer: 'Vahva', instruction: null, enabled: true },
+      { origin: 'Mild', answer: 'Mieto', instruction: null, enabled: true },
+      { origin: 'Spicy', answer: 'Tulinen', instruction: null, enabled: true },
+      { origin: 'Good tasting', answer: 'Hyvänmakuinen', instruction: null, enabled: true },
+      { origin: 'Bad tasting', answer: 'Pahanmakuinen', instruction: null, enabled: true },
+      { origin: 'Good', answer: 'Hyvää', instruction: null, enabled: true },
+      { origin: 'Bad', answer: 'Pahaa', instruction: null, enabled: true },
+      { origin: 'Uncooked', answer: 'Raaka', instruction: null, enabled: true },
+      { origin: 'Cooked', answer: 'Kypsä', instruction: null, enabled: true },
+      { origin: 'Boiled', answer: 'Keitetty', instruction: null, enabled: true },
+      { origin: 'Fried', answer: 'Paistettu', instruction: null, enabled: true },
+      { origin: 'Baked', answer: 'Uunissa paistettu', instruction: null, enabled: true },
+      { origin: 'Deep fried', answer: 'Friteerattu', instruction: null, enabled: true },
+      { origin: 'Marinated', answer: 'Marinoitu', instruction: null, enabled: true },
+      { origin: 'Hard', answer: 'Kova', instruction: null, enabled: true },
+      { origin: 'Soft', answer: 'Pehmeä', instruction: null, enabled: true },
+      { origin: 'Cold', answer: 'Kylmä', instruction: null, enabled: true },
+      { origin: 'Warm', answer: 'Lämmin', instruction: null, enabled: true },
+      { origin: 'Hot', answer: 'Kuuma', instruction: null, enabled: true },
+      { origin: 'Spoiled', answer: 'Pilalla', instruction: null, enabled: true },
+      { origin: 'Healthy', answer: 'Terveellinen', instruction: null, enabled: true },
+      { origin: 'Unhealthy', answer: 'Epäterveellinen', instruction: null, enabled: true },
+      { origin: 'Greasy', answer: 'Rasvainen', instruction: null, enabled: true },
+      { origin: 'Lean', answer: 'Rasvaton', instruction: null, enabled: true }
     ]
   }
 }

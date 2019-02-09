@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {QuizzService} from '../quizz.service';
+import {ActivatedRoute, ParamMap} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
 
 declare var M: any;
 interface QuestionType { origin: string; answer: string; instruction: string | null; enabled: boolean; }
@@ -10,21 +12,36 @@ interface QuestionType { origin: string; answer: string; instruction: string | n
   styleUrls: ['./quizz.component.sass']
 })
 export class QuizzComponent implements OnInit {
-  private questions: QuestionType[];
+  public questions: QuestionType[];
   public answerneeded = 1;
   public title = null;
   public question = null;
   public course = false;
   public show = false;
+  public options = {
+    question: {
+      text: true,
+      voice: true
+    },
+    answer: {
+      text: true
+    }
+  };
+  public showOptions = false;
+  private langs = { origin: '', answer: ''};
   public answer = '';
 
-  constructor(private quizz: QuizzService) {}
+  constructor(private quizz: QuizzService, private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit() {
-    const quizz = this.quizz.get('kaupassa');
-    this.title = quizz.name;
-    this.questions = quizz.questions;
-    this.selectQuestion();
+    this.route.paramMap.subscribe((params) => {
+      this.quizz.get(params.get('quizz')).then((quizz) => {
+        this.title = quizz.name;
+        this.questions = quizz.questions;
+        this.langs = quizz.langs;
+        this.selectQuestion();
+      });
+    });
   }
 
   selectQuestion() {
@@ -67,6 +84,18 @@ export class QuizzComponent implements OnInit {
       instruction: question.instruction,
       enabled: question.enabled
     }));
+    const langs = {
+      origin: this.langs.answer,
+      answer: this.langs.origin
+    };
+    this.langs = langs;
     this.questions = qs;
+  }
+
+  playVoice(text: string, type: string) {
+    const audio = new Audio();
+    audio.src = 'assets/voices/' + this.langs[type] + '/' + btoa(text) + '.mp3';
+    audio.load();
+    audio.play();
   }
 }

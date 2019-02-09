@@ -14,6 +14,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PersonsComponent } from './persons/persons.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { QuizzComponent } from './quizz/quizz.component';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {GhpInterceptor} from './ghpInterceptor';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,10 @@ import { QuizzComponent } from './quizz/quizz.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: GhpInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
