@@ -1,446 +1,521 @@
 {
-  "ruoka":{
-    "name":"Ruoka",
-    "langs":{
-      "origin":"en-GB",
-      "answer":"fi-FI"
+  "ruoka": {
+    "name": "Ruoka",
+    "langs": {
+      "origin": "en-GB",
+      "answer": "fi-FI"
     },
-    "questions":[
+    "questions": [
       {
-        "answer":"Omena",
-        "origin":"Apple",
-        "instruction":null,
-        "enabled":true
+        "answer": "Omena",
+        "origin": "Apple",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Appelsiini",
-        "origin":"Orange",
-        "instruction":null,
-        "enabled":true
+        "answer": "Appelsiini",
+        "origin": "Orange",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Banaani",
-        "origin":"Banana",
-        "instruction":null,
-        "enabled":true
+        "answer": "Banaani",
+        "origin": "Banana",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Sitruuna",
-        "origin":"Lemon",
-        "instruction":null,
-        "enabled":true
+        "answer": "Sitruuna",
+        "origin": "Lemon",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Mansikka",
-        "origin":"Strawberry",
-        "instruction":null,
-        "enabled":true
+        "answer": "Mansikka",
+        "origin": "Strawberry",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Mustikka",
-        "origin":"Blueberry",
-        "instruction":null,
-        "enabled":true
+        "answer": "Mustikka",
+        "origin": "Blueberry",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Puolukka",
-        "origin":"Lingonberry",
-        "instruction":null,
-        "enabled":true
+        "answer": "Puolukka",
+        "origin": "Lingonberry",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Vadelma",
-        "origin":"Raspberry",
-        "instruction":null,
-        "enabled":true
+        "answer": "Vadelma",
+        "origin": "Raspberry",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Lihatuotteet",
-        "origin":"Meat products",
-        "instruction":null,
-        "enabled":true
+        "answer": "Lihatuotteet",
+        "origin": "Meat products",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Jauhliha",
-        "origin":"Grounded meat",
-        "instruction":null,
-        "enabled":true
+        "answer": "Jauhliha",
+        "origin": "Grounded meat",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kinkku",
-        "origin":"Ham",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kinkku",
+        "origin": "Ham",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Broileri",
-        "origin":"Chicken",
-        "instruction":null,
-        "enabled":true
+        "answer": "Broileri",
+        "origin": "Chicken",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Lihapyörykkä",
-        "origin":"Meat ball",
-        "instruction":null,
-        "enabled":true
+        "answer": "Lihapyörykkä",
+        "origin": "Meat ball",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Muna",
-        "origin":"Egg",
-        "instruction":null,
-        "enabled":true
+        "answer": "Muna",
+        "origin": "Egg",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Keitetty muna",
-        "origin":"Boiled egg",
-        "instruction":null,
-        "enabled":true
+        "answer": "Keitetty muna",
+        "origin": "Boiled egg",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Paistettu muna",
-        "origin":"Fried egg",
-        "instruction":null,
-        "enabled":true
+        "answer": "Paistettu muna",
+        "origin": "Fried egg",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kananmuna",
-        "origin":"Chicken egg",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kananmuna",
+        "origin": "Chicken egg",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kala",
-        "origin":"Fish",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kala",
+        "origin": "Fish",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Maitotuotteet",
-        "origin":"Dairy products",
-        "instruction":null,
-        "enabled":true
+        "answer": "Maitotuotteet",
+        "origin": "Dairy products",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Voi",
-        "origin":"Butter",
-        "instruction":null,
-        "enabled":true
+        "answer": "Voi",
+        "origin": "Butter",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Margariini",
-        "origin":"Margarine",
-        "instruction":null,
-        "enabled":true
+        "answer": "Margariini",
+        "origin": "Margarine",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Juusto",
-        "origin":"Cheese",
-        "instruction":null,
-        "enabled":true
+        "answer": "Juusto",
+        "origin": "Cheese",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Maito",
-        "origin":"Milk",
-        "instruction":null,
-        "enabled":true
+        "answer": "Maito",
+        "origin": "Milk",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Viljatuotteet",
-        "origin":"Cereal products",
-        "instruction":null,
-        "enabled":true
+        "answer": "Viljatuotteet",
+        "origin": "Cereal products",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Jauhot",
-        "origin":"Flour",
-        "instruction":null,
-        "enabled":true
+        "answer": "Jauhot",
+        "origin": "Flour",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Puuro",
-        "origin":"Porridge",
-        "instruction":null,
-        "enabled":true
+        "answer": "Puuro",
+        "origin": "Porridge",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Riisi",
-        "origin":"Rice",
-        "instruction":null,
-        "enabled":true
+        "answer": "Riisi",
+        "origin": "Rice",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Makaroni",
-        "origin":"Macaroni",
-        "instruction":null,
-        "enabled":true
+        "answer": "Makaroni",
+        "origin": "Macaroni",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Leipä",
-        "origin":"Bread",
-        "instruction":null,
-        "enabled":true
+        "answer": "Leipä",
+        "origin": "Bread",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Pulla",
-        "origin":"Sweet bun",
-        "instruction":null,
-        "enabled":true
+        "answer": "Pulla",
+        "origin": "Sweet bun",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kakku",
-        "origin":"Cake",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kakku",
+        "origin": "Cake",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Keksi",
-        "origin":"Biscuit",
-        "instruction":null,
-        "enabled":true
+        "answer": "Keksi",
+        "origin": "Biscuit",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Vihannekset ja Juurekset",
-        "origin":"Vegetables and Roots",
-        "instruction":null,
-        "enabled":true
+        "answer": "Vihannekset ja Juurekset",
+        "origin": "Vegetables and Roots",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Sipuli",
-        "origin":"Onion",
-        "instruction":null,
-        "enabled":true
+        "answer": "Sipuli",
+        "origin": "Onion",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Valkosipuli",
-        "origin":"Garlic",
-        "instruction":null,
-        "enabled":true
+        "answer": "Valkosipuli",
+        "origin": "Garlic",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Porkkana",
-        "origin":"Carrot",
-        "instruction":null,
-        "enabled":true
+        "answer": "Porkkana",
+        "origin": "Carrot",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Tomaatti",
-        "origin":"Tomato",
-        "instruction":null,
-        "enabled":true
+        "answer": "Tomaatti",
+        "origin": "Tomato",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kurkku",
-        "origin":"Cucumber",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kurkku",
+        "origin": "Cucumber",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Salaatti",
-        "origin":"Salad",
-        "instruction":null,
-        "enabled":true
+        "answer": "Salaatti",
+        "origin": "Salad",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kaali",
-        "origin":"Cabbage",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kaali",
+        "origin": "Cabbage",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Kukkakaali",
-        "origin":"Cauliflower",
-        "instruction":null,
-        "enabled":true
+        "answer": "Kukkakaali",
+        "origin": "Cauliflower",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Peruna",
-        "origin":"Potato",
-        "instruction":null,
-        "enabled":true
+        "answer": "Peruna",
+        "origin": "Potato",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "answer":"Punajuuri",
-        "origin":"Beetroot",
-        "instruction":null,
-        "enabled":true
+        "answer": "Punajuuri",
+        "origin": "Beetroot",
+        "instruction": null,
+        "enabled": true
       }
     ]
   },
-  "ruoka_adjektiivit":{
-    "name":"Ruoka adjektiivit",
-    "langs":{
-      "origin":"en-GB",
-      "answer":"fi-FI"
+  "ruoka_adjektiivit": {
+    "name": "Ruoka adjektiivit",
+    "langs": {
+      "origin": "en-GB",
+      "answer": "fi-FI"
     },
-    "questions":[
+    "questions": [
       {
-        "origin":"Sweet",
-        "answer":"Makea",
-        "instruction":null,
-        "enabled":true
+        "origin": "Sweet",
+        "answer": "Makea",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Sour",
-        "answer":"Hapan",
-        "instruction":null,
-        "enabled":true
+        "origin": "Sour",
+        "answer": "Hapan",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Sweet and sour",
-        "answer":"Hapanimelä",
-        "instruction":null,
-        "enabled":true
+        "origin": "Sweet and sour",
+        "answer": "Hapanimelä",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Salty",
-        "answer":"Suolainen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Salty",
+        "answer": "Suolainen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Strong",
-        "answer":"Vahva",
-        "instruction":null,
-        "enabled":true
+        "origin": "Strong",
+        "answer": "Vahva",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Mild",
-        "answer":"Mieto",
-        "instruction":null,
-        "enabled":true
+        "origin": "Mild",
+        "answer": "Mieto",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Spicy",
-        "answer":"Tulinen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Spicy",
+        "answer": "Tulinen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Good tasting",
-        "answer":"Hyvänmakuinen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Good tasting",
+        "answer": "Hyvänmakuinen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Bad tasting",
-        "answer":"Pahanmakuinen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Bad tasting",
+        "answer": "Pahanmakuinen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Good",
-        "answer":"Hyvää",
-        "instruction":null,
-        "enabled":true
+        "origin": "Good",
+        "answer": "Hyvää",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Bad",
-        "answer":"Pahaa",
-        "instruction":null,
-        "enabled":true
+        "origin": "Bad",
+        "answer": "Pahaa",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Uncooked",
-        "answer":"Raaka",
-        "instruction":null,
-        "enabled":true
+        "origin": "Uncooked",
+        "answer": "Raaka",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Cooked",
-        "answer":"Kypsä",
-        "instruction":null,
-        "enabled":true
+        "origin": "Cooked",
+        "answer": "Kypsä",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Boiled",
-        "answer":"Keitetty",
-        "instruction":null,
-        "enabled":true
+        "origin": "Boiled",
+        "answer": "Keitetty",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Fried",
-        "answer":"Paistettu",
-        "instruction":null,
-        "enabled":true
+        "origin": "Fried",
+        "answer": "Paistettu",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Baked",
-        "answer":"Uunissa paistettu",
-        "instruction":null,
-        "enabled":true
+        "origin": "Baked",
+        "answer": "Uunissa paistettu",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Deep fried",
-        "answer":"Friteerattu",
-        "instruction":null,
-        "enabled":true
+        "origin": "Deep fried",
+        "answer": "Friteerattu",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Marinated",
-        "answer":"Marinoitu",
-        "instruction":null,
-        "enabled":true
+        "origin": "Marinated",
+        "answer": "Marinoitu",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Hard",
-        "answer":"Kova",
-        "instruction":null,
-        "enabled":true
+        "origin": "Hard",
+        "answer": "Kova",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Soft",
-        "answer":"Pehmeä",
-        "instruction":null,
-        "enabled":true
+        "origin": "Soft",
+        "answer": "Pehmeä",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Cold",
-        "answer":"Kylmä",
-        "instruction":null,
-        "enabled":true
+        "origin": "Cold",
+        "answer": "Kylmä",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Warm",
-        "answer":"Lämmin",
-        "instruction":null,
-        "enabled":true
+        "origin": "Warm",
+        "answer": "Lämmin",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Hot",
-        "answer":"Kuuma",
-        "instruction":null,
-        "enabled":true
+        "origin": "Hot",
+        "answer": "Kuuma",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Spoiled",
-        "answer":"Pilalla",
-        "instruction":null,
-        "enabled":true
+        "origin": "Spoiled",
+        "answer": "Pilalla",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Healthy",
-        "answer":"Terveellinen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Healthy",
+        "answer": "Terveellinen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Unhealthy",
-        "answer":"Epäterveellinen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Unhealthy",
+        "answer": "Epäterveellinen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Greasy",
-        "answer":"Rasvainen",
-        "instruction":null,
-        "enabled":true
+        "origin": "Greasy",
+        "answer": "Rasvainen",
+        "instruction": null,
+        "enabled": true
       },
       {
-        "origin":"Lean",
-        "answer":"Rasvaton",
-        "instruction":null,
-        "enabled":true
+        "origin": "Lean",
+        "answer": "Rasvaton",
+        "instruction": null,
+        "enabled": true
       }
+    ]
+  },
+  "milloin": {
+    "name": "Milloin (when) ?",
+    "langs": {
+      "origin": "en-GB",
+      "answer": "fi-FI"
+    },
+    "questions": [
+      { "origin": "On monday", "answer": "Maanantaina", "instruction": null,  "enabled": true },
+      { "origin": "On tuesday", "answer": "Tiistaina", "instruction": null,  "enabled": true },
+      { "origin": "On wednesday", "answer": "Keskiviikkona", "instruction": null,  "enabled": true },
+      { "origin": "On thursday", "answer": "Torstaina", "instruction": null,  "enabled": true },
+      { "origin": "On friday", "answer": "Perjantaina", "instruction": null,  "enabled": true },
+      { "origin": "On saturday", "answer": "Lauantaina", "instruction": null,  "enabled": true },
+      { "origin": "On sunday", "answer": "Sunnuntaina", "instruction": null,  "enabled": true },
+      { "origin": "In january", "answer": "Tammikuussa", "instruction": null,  "enabled": true },
+      { "origin": "In february", "answer": "Helmikuussa", "instruction": null,  "enabled": true },
+      { "origin": "In march", "answer": "Maaliskuussa", "instruction": null,  "enabled": true },
+      { "origin": "In april", "answer": "Huhtikuussa", "instruction": null,  "enabled": true },
+      { "origin": "In may", "answer": "Toukokuussa", "instruction": null,  "enabled": true },
+      { "origin": "In june", "answer": "Kesäkuussa", "instruction": null,  "enabled": true },
+      { "origin": "In july", "answer": "Heinäkuussa", "instruction": null,  "enabled": true },
+      { "origin": "In august", "answer": "Elokuussa", "instruction": null,  "enabled": true },
+      { "origin": "In september", "answer": "Syyskuussa", "instruction": null,  "enabled": true },
+      { "origin": "In october", "answer": "Lokakuussa", "instruction": null,  "enabled": true },
+      { "origin": "In november", "answer": "Marraskuussa", "instruction": null,  "enabled": true },
+      { "origin": "In december", "answer": "Joulukuussa", "instruction": null,  "enabled": true },
+      { "origin": "In spring", "answer": "Keväällä", "instruction": null,  "enabled": true },
+      { "origin": "In summer", "answer": "Kesällä", "instruction": null,  "enabled": true },
+      { "origin": "In autumn", "answer": "Syksyllä", "instruction": null,  "enabled": true },
+      { "origin": "In winter", "answer": "Talvella", "instruction": null,  "enabled": true },
+      { "origin": "In the morning", "answer": "Aamulla", "instruction": null,  "enabled": true },
+      { "origin": "In the morning ?", "answer": "Aamupäivälla", "instruction": null,  "enabled": true },
+      { "origin": "In the daytime", "answer": "Päivällä", "instruction": null,  "enabled": true },
+      { "origin": "In the afternoon", "answer": "Iltapäivällä", "instruction": null,  "enabled": true },
+      { "origin": "In the evening", "answer": "Illalla", "instruction": null,  "enabled": true },
+      { "origin": "In the night", "answer": "Yöllä", "instruction": null,  "enabled": true },
+      { "origin": "In the early hours", "answer": "Aamuyöllä", "instruction": null,  "enabled": true },
+      { "origin": "The day before yesterday", "answer": "Toissapäivänä", "instruction": null,  "enabled": true },
+      { "origin": "Yesterday", "answer": "Eilen", "instruction": null,  "enabled": true },
+      { "origin": "Today", "answer": "Tänään", "instruction": null,  "enabled": true },
+      { "origin": "Tomorrow", "answer": "Huomenna", "instruction": null,  "enabled": true },
+      { "origin": "The day after tomorrow", "answer": "Ylihuomenna", "instruction": null,  "enabled": true },
+      { "origin": "Last week", "answer": "Viime viikolla", "instruction": null,  "enabled": true },
+      { "origin": "This week", "answer": "Tällä viikolla", "instruction": null,  "enabled": true },
+      { "origin": "Next week", "answer": "Ensi viikolla", "instruction": null,  "enabled": true },
+      { "origin": "Last monday", "answer": "Viime maanantaina", "instruction": "Same rule for the other weeks days",  "enabled": true },
+      { "origin": "This monday", "answer": "Tänä maanantaina", "instruction": "Same rule for the other weeks days",  "enabled": true },
+      { "origin": "Next monday", "answer": "Ensi maanantaina", "instruction": "Same rule for the other weeks days",  "enabled": true },
+      { "origin": "Last june", "answer": "Viime kesäkuussa", "instruction": "Same rule for the other months",  "enabled": true },
+      { "origin": "This june", "answer": "Tässä kesäkuussa", "instruction": "Same rule for the other months",  "enabled": true },
+      { "origin": "Next june", "answer": "Ensi kesäkuussa", "instruction": "Same rule for the other months",  "enabled": true },
+      { "origin": "Last morning", "answer": "Eilen aamulla", "instruction": "Same rule for the other periods",  "enabled": true },
+      { "origin": "This morning", "answer": "tänä aamuna", "instruction": "Same rule for the other periods",  "enabled": true },
+      { "origin": "Tomorrow morning", "answer": "Huomenna aamulla", "instruction": "Same rule for the other periods",  "enabled": true },
+      { "origin": "Last summer", "answer": "Viime kesänä", "instruction": "Same rule for the other seasons",  "enabled": true },
+      { "origin": "This summer", "answer": "Tänä kesänä", "instruction": "Same rule for the other seasons",  "enabled": true },
+      { "origin": "Next summer", "answer": "Ensi kesänä", "instruction": "Same rule for the other seasons",  "enabled": true },
+      { "origin": "Every monday", "answer": "Joka maanantai", "instruction": null,  "enabled": true },
+      { "origin": "Every day", "answer": "Joka päivä", "instruction": null,  "enabled": true },
+      { "origin": "Every week", "answer": "Joka viikko", "instruction": null,  "enabled": true },
+      { "origin": "Every year", "answer": "Joka vuosi", "instruction": null,  "enabled": true },
+      { "origin": "Every summer", "answer": "Joka kesä", "instruction": null,  "enabled": true },
+      { "origin": "Once a day", "answer": "Kerran päivässä", "instruction": null,  "enabled": true },
+      { "origin": "2 times a week", "answer": "2 kertaa viikossa", "instruction": null,  "enabled": true },
+      { "origin": "5 times a year", "answer": "5 kertaa vuodessa", "instruction": null,  "enabled": true },
+      { "origin": "3 times a month", "answer": "3 kertaa kuussa", "instruction": null,  "enabled": true },
+      { "origin": "7 times per hour", "answer": "7 kertaa tunnissa", "instruction": null,  "enabled": true },
+      { "origin": "I never", "answer": "En koskaan", "instruction": null,  "enabled": true },
+      { "origin": "You never", "answer": "Et koskaan", "instruction": null,  "enabled": true },
+      { "origin": "Ei koskaan", "answer": "he/she/it Never", "instruction": null,  "enabled": true },
+      { "origin": "We never", "answer": "Emme koskaan", "instruction": null,  "enabled": true },
+      { "origin": "You never", "answer": "Ette koskaan", "instruction": "plural",  "enabled": true },
+      { "origin": "They never", "answer": "Eivät koskaan", "instruction": null,  "enabled": true }
     ]
   }
 }
