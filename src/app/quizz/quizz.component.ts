@@ -94,8 +94,15 @@ export class QuizzComponent implements OnInit {
 
   playVoice(text: string, type: string) {
     const audio = new Audio();
-    audio.src = 'assets/voices/' + this.langs[type] + '/' + btoa(text) + '.mp3';
+    audio.src = 'assets/voices/' + this.langs[type] + '/' + this.b64EncodeUnicode(text) + '.mp3';
     audio.load();
     audio.play();
+  }
+
+  b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+      function toSolidBytes(match, p1) {
+        return String.fromCharCode(('0x' as any) + p1);
+      }));
   }
 }
